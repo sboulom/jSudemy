@@ -99,7 +99,19 @@ function percentageOfWorld1(population) {
     return(population/7900) * 100;
 }
 
-const germanyPer = percentageOfWorld1(83);
-const portugalPer = percentageOfWorld1(10);
-const finlandPer = percentageOfWorld1(51);
-console.log(germanyPer, portugalPer, finlandPer)
+const germanyPer = Math.floor(percentageOfWorld1(83));
+const portugalPer = Math.floor(percentageOfWorld1(10));
+const finlandPer = Math.floor(percentageOfWorld1(51));
+console.log(germanyPer, portugalPer, finlandPer);
+
+const percentageOfWorld3 = population => (population / 7900) * 100;
+
+const describePopulation = function (country, population){
+    const percentage = percentageOfWorld1(population);
+    const description = `${country} has ${population} million people, which is about ${percentage}% of the world`;
+    console.log(description);   
+}
+
+describePopulation("Portugal", 10);
+describePopulation("Germany", 83);
+describePopulation("Finland", 6);
