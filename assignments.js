@@ -120,6 +120,12 @@ function percentageOfWorld1(population) {
 
 const populations = [10, 83, 70, 440];
 console.log(populations.length === 4);
+const percentage2 =[];
+for (let i = 0; i < populations.length; i++) {
+    const perc = percentageOfWorld1(populations[i]);
+    percentage2.push(perc);
+}
+console.log(percentage2);
 
 const percentages = [
     Math.floor(percentageOfWorld1(populations[0])),
@@ -153,8 +159,21 @@ const myCountry = {
     capital: 'Washington DC',
     language: 'English',
     population: 6,
-    neighbors: ['Canada', 'United States', 'Mexico']
-}
+    neighbors: ['Canada', 'United States', 'Mexico'],
+
+    describe: function(){
+        console.log(
+            `${this.country} has ${this.population} million ${this.language}-speaking people,${this.neighbors.length} neighbouring countries and a capitol called ${this.capital}`
+        );
+    },
+    checkIsland: function(){
+        this.isIsland = this.neighbors.length === 0 ? true: false
+    }
+};
+
+myCountry.describe()
+myCountry.checkIsland()
+console.log(myCountry)
 
 // dot v bracket notation 
 console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language} speaking people, ${myCountry.neighbors.length} neighboring countries and a capital city called ${myCountry.capital}`);
@@ -165,4 +184,10 @@ console.log(myCountry.population)
 myCountry['population'] -= 2;
 console.log(myCountry.population)
 
-// object method
+// iteration for loop
+
+for (let voter = 1; voter <=50; voter++) {
+    console.log(`Voter number ${voter} is currently voting`)
+};
+
+// looping backwards 
