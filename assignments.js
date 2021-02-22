@@ -191,3 +191,23 @@ for (let voter = 1; voter <=50; voter++) {
 };
 
 // looping backwards 
+
+const listOfNeighbors = [["Canada", "Mexico"], ["Spain"], ["Norway", "Sweeden", "Russia"]];
+
+for (let i = 0; i < listOfNeighbors.length; i++) {
+   for (let y = 0; y < listOfNeighbors[i].length; y++) {
+        console.log(`Neighbor: ${listOfNeighbors[i] [y]}`);
+    
+   }
+}
+
+// while loop 
+
+const percentage3 = [];
+let i = 0;
+while(i<populations.length){
+    const perc = percentageOfWorld1(populations[i]);
+    percentage3.push(perc);
+    i++;
+}
+console.log(percentage3)
