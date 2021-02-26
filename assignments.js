@@ -1,213 +1,231 @@
-const country = "United States";
-const continent = "North America";
-const population = 80;
+// const country = "United States";
+// const continent = "North America";
+// const population = 80;
 
-console.log(country);
-console.log(continent);
-console.log(population);
-const isIsland = false;
-// isIsland = true;
-let language = "English";
+// console.log(country);
+// console.log(continent);
+// console.log(population);
+// const isIsland = false;
+// // isIsland = true;
+// let language = "English";
 
-// console.log(typeof isIsland);
-// console.log(typeof population);
-// console.log(typeof country);
-// console.log(typeof language);
+// // console.log(typeof isIsland);
+// // console.log(typeof population);
+// // console.log(typeof country);
+// // console.log(typeof language);
 
-// console.log(population/2);
-// population++;
+// // console.log(population/2);
+// // population++;
 
-// temperate literal 
+// // temperate literal 
 
-const description = `${country} is in ${continent}, and its ${population} million people speak ${language}`;
+// const description = `${country} is in ${continent}, and its ${population} million people speak ${language}`;
 
-console.log(description);
+// console.log(description);
 
 
-// if else 
-if(population > 33){
-    console.log(`${country}'s population is above average`);
-} else {
-    console.log(`${country}'s populstion is below average`);
-}
-
-// type conversion and coercion 
-
-console.log('9' - '5');
-console.log('19' - '13'+ '17');
-console.log('19' - '13'+ 17);
-console.log('123' < 57);
-console.log(5 + 6 + '4' + 9 - 4 - 2);
-
-// let numNeighbors = prompt (
-//     "How many neigbor countries does your country have?"
-// )
-
-// if (numNeighbors === 1 ){
-//     console.log("only one border");
-// } else if (numNeighbors > 1){
-//     console.log("more than 1 border");
+// // if else 
+// if(population > 33){
+//     console.log(`${country}'s population is above average`);
 // } else {
-//     console.log("its an islan bruh")
+//     console.log(`${country}'s populstion is below average`);
 // }
 
-if (language === "English" && population < 50 && !isIsland ){
-    console.log(`you should live in ${country}`)
-} else {
-    console.log("find another country")
-}
+// // type conversion and coercion 
 
+// console.log('9' - '5');
+// console.log('19' - '13'+ '17');
+// console.log('19' - '13'+ 17);
+// console.log('123' < 57);
+// console.log(5 + 6 + '4' + 9 - 4 - 2);
 
-// switch 
+// // let numNeighbors = prompt (
+// //     "How many neigbor countries does your country have?"
+// // )
 
-// switch (language) {
-//     case mandarin:
-//         console.log("Most number of native speakers!");
-//         break;
-//     case spanish:
-//         console.log("2nd place in number of native speakers");
-//         break;
-//     case english: 
-//         console.log("3rd place");
-//         break;
-//     case hindi:
-//         console.log("number 4");
-//         break;
-//     case arabic:
-//         console.log("5th most spoken language");
-//         break
-//     default:
-//         console.log("time to learn a language");
-// }
+// // if (numNeighbors === 1 ){
+// //     console.log("only one border");
+// // } else if (numNeighbors > 1){
+// //     console.log("more than 1 border");
+// // } else {
+// //     console.log("its an islan bruh")
+// // }
 
-// ternary operator 
-// if(`${population}` > 33){ 
-//     console.log(`${country}'s populaton is above average`);
+// if (language === "English" && population < 50 && !isIsland ){
+//     console.log(`you should live in ${country}`)
 // } else {
-//     console.log(`${country}'s populaton is below average`);
+//     console.log("find another country")
 // }
 
-function describeCountry(country, population, capitalCity){
-    return `${country} has ${population} million people and its capital city is ${capitalCity}`;
-}
 
-const descPortugal = describeCountry('Portugal', 10, 'Lisbon');
-const descGermany = describeCountry('Germany', 83, 'Berlin');
-const descFinland = describeCountry('Finland', 6, 'Helsinki');
+// // switch 
 
-function percentageOfWorld1(population) {
-    return(population/7900) * 100;
-}
+// // switch (language) {
+// //     case mandarin:
+// //         console.log("Most number of native speakers!");
+// //         break;
+// //     case spanish:
+// //         console.log("2nd place in number of native speakers");
+// //         break;
+// //     case english: 
+// //         console.log("3rd place");
+// //         break;
+// //     case hindi:
+// //         console.log("number 4");
+// //         break;
+// //     case arabic:
+// //         console.log("5th most spoken language");
+// //         break
+// //     default:
+// //         console.log("time to learn a language");
+// // }
 
-// const germanyPer = Math.floor(percentageOfWorld1(83));
-// const portugalPer = Math.floor(percentageOfWorld1(10));
-// const finlandPer = Math.floor(percentageOfWorld1(51));
-// console.log(germanyPer, portugalPer, finlandPer);
+// // ternary operator 
+// // if(`${population}` > 33){ 
+// //     console.log(`${country}'s populaton is above average`);
+// // } else {
+// //     console.log(`${country}'s populaton is below average`);
+// // }
 
-// const percentageOfWorld3 = population => (population / 7900) * 100;
-
-// const describePopulation = function (country, population){
-//     const percentage = percentageOfWorld1(population);
-//     const description = `${country} has ${population} million people, which is about ${percentage}% of the world`;
-//     console.log(description);   
+// function describeCountry(country, population, capitalCity){
+//     return `${country} has ${population} million people and its capital city is ${capitalCity}`;
 // }
 
-// describePopulation("Portugal", 10);
-// describePopulation("Germany", 83);
-// describePopulation("Finland", 6);
+// const descPortugal = describeCountry('Portugal', 10, 'Lisbon');
+// const descGermany = describeCountry('Germany', 83, 'Berlin');
+// const descFinland = describeCountry('Finland', 6, 'Helsinki');
 
-// intro to array 
+// function percentageOfWorld1(population) {
+//     return(population/7900) * 100;
+// }
 
-const populations = [10, 83, 70, 440];
-console.log(populations.length === 4);
-const percentage2 =[];
-for (let i = 0; i < populations.length; i++) {
-    const perc = percentageOfWorld1(populations[i]);
-    percentage2.push(perc);
-}
-console.log(percentage2);
+// // const germanyPer = Math.floor(percentageOfWorld1(83));
+// // const portugalPer = Math.floor(percentageOfWorld1(10));
+// // const finlandPer = Math.floor(percentageOfWorld1(51));
+// // console.log(germanyPer, portugalPer, finlandPer);
 
-const percentages = [
-    Math.floor(percentageOfWorld1(populations[0])),
-    Math.floor(percentageOfWorld1(populations[1])),
-    percentageOfWorld1(populations[2]),
-    percentageOfWorld1(populations[3]),
-]
-console.log(percentages)
+// // const percentageOfWorld3 = population => (population / 7900) * 100;
 
-const neighbors = ['Canada', 'United States', 'Mexico'];
+// // const describePopulation = function (country, population){
+// //     const percentage = percentageOfWorld1(population);
+// //     const description = `${country} has ${population} million people, which is about ${percentage}% of the world`;
+// //     console.log(description);   
+// // }
 
-neighbors.push('Utopia');
-console.log(neighbors);
-neighbors.pop('Utopia')
-console.log(neighbors);
+// // describePopulation("Portugal", 10);
+// // describePopulation("Germany", 83);
+// // describePopulation("Finland", 6);
 
-if(!neighbors.includes('Canada')){
-    console.log('Come visit the United States')
-} else {
-    console.log('You live on an island')
-};
+// // intro to array 
 
-neighbors[neighbors.indexOf('United States')] = "All Mighty US of A";
+// const populations = [10, 83, 70, 440];
+// console.log(populations.length === 4);
+// const percentage2 =[];
+// for (let i = 0; i < populations.length; i++) {
+//     const perc = percentageOfWorld1(populations[i]);
+//     percentage2.push(perc);
+// }
+// console.log(percentage2);
 
-console.log(neighbors)
+// const percentages = [
+//     Math.floor(percentageOfWorld1(populations[0])),
+//     Math.floor(percentageOfWorld1(populations[1])),
+//     percentageOfWorld1(populations[2]),
+//     percentageOfWorld1(populations[3]),
+// ]
+// console.log(percentages)
 
-// intro to Object
+// const neighbors = ['Canada', 'United States', 'Mexico'];
 
-const myCountry = {
-    country: 'United States',
-    capital: 'Washington DC',
-    language: 'English',
-    population: 6,
-    neighbors: ['Canada', 'United States', 'Mexico'],
+// neighbors.push('Utopia');
+// console.log(neighbors);
+// neighbors.pop('Utopia')
+// console.log(neighbors);
 
-    describe: function(){
-        console.log(
-            `${this.country} has ${this.population} million ${this.language}-speaking people,${this.neighbors.length} neighbouring countries and a capitol called ${this.capital}`
-        );
-    },
-    checkIsland: function(){
-        this.isIsland = this.neighbors.length === 0 ? true: false
-    }
-};
+// if(!neighbors.includes('Canada')){
+//     console.log('Come visit the United States')
+// } else {
+//     console.log('You live on an island')
+// };
 
-myCountry.describe()
-myCountry.checkIsland()
-console.log(myCountry)
+// neighbors[neighbors.indexOf('United States')] = "All Mighty US of A";
 
-// dot v bracket notation 
-console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language} speaking people, ${myCountry.neighbors.length} neighboring countries and a capital city called ${myCountry.capital}`);
+// console.log(neighbors)
 
-myCountry.population += 2;
-console.log(myCountry.population)
+// // intro to Object
 
-myCountry['population'] -= 2;
-console.log(myCountry.population)
+// const myCountry = {
+//     country: 'United States',
+//     capital: 'Washington DC',
+//     language: 'English',
+//     population: 6,
+//     neighbors: ['Canada', 'United States', 'Mexico'],
 
-// iteration for loop
+//     describe: function(){
+//         console.log(
+//             `${this.country} has ${this.population} million ${this.language}-speaking people,${this.neighbors.length} neighbouring countries and a capitol called ${this.capital}`
+//         );
+//     },
+//     checkIsland: function(){
+//         this.isIsland = this.neighbors.length === 0 ? true: false
+//     }
+// };
 
-for (let voter = 1; voter <=50; voter++) {
-    console.log(`Voter number ${voter} is currently voting`)
-};
+// myCountry.describe()
+// myCountry.checkIsland()
+// console.log(myCountry)
 
-// looping backwards 
+// // dot v bracket notation 
+// console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language} speaking people, ${myCountry.neighbors.length} neighboring countries and a capital city called ${myCountry.capital}`);
 
-const listOfNeighbors = [["Canada", "Mexico"], ["Spain"], ["Norway", "Sweeden", "Russia"]];
+// myCountry.population += 2;
+// console.log(myCountry.population)
 
-for (let i = 0; i < listOfNeighbors.length; i++) {
-   for (let y = 0; y < listOfNeighbors[i].length; y++) {
-        console.log(`Neighbor: ${listOfNeighbors[i] [y]}`);
+// myCountry['population'] -= 2;
+// console.log(myCountry.population)
+
+// // iteration for loop
+
+// for (let voter = 1; voter <=50; voter++) {
+//     console.log(`Voter number ${voter} is currently voting`)
+// };
+
+// // looping backwards 
+
+// const listOfNeighbors = [["Canada", "Mexico"], ["Spain"], ["Norway", "Sweeden", "Russia"]];
+
+// for (let i = 0; i < listOfNeighbors.length; i++) {
+//    for (let y = 0; y < listOfNeighbors[i].length; y++) {
+//         console.log(`Neighbor: ${listOfNeighbors[i] [y]}`);
     
-   }
-}
+//    }
+// }
 
-// while loop 
+// // while loop 
 
-const percentage3 = [];
-let i = 0;
-while(i<populations.length){
-    const perc = percentageOfWorld1(populations[i]);
-    percentage3.push(perc);
-    i++;
-}
-console.log(percentage3)
+// const percentage3 = [];
+// let i = 0;
+// while(i<populations.length){
+//     const perc = percentageOfWorld1(populations[i]);
+//     percentage3.push(perc);
+//     i++;
+// }
+// console.log(percentage3)
+
+// coding challenge #1 
+
+
+// const massMark = 78;
+// const hMark = 1.69;
+// const massJohn = 92;
+// const hJohn = 1.95;
+const massMark = 95;
+const hMark = 1.88;
+const massJohn = 85;
+const hJohn = 1.76;
+
+const BMIMark = massMark / hMark **2
+const BMIJohn = massJohn / hJohn **2
+const markHeigherBMI = BMIMark > BMIJohn;
+console.log(BMIMark, BMIJohn, markHeigherBMI)
+
