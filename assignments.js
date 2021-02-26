@@ -219,13 +219,32 @@
 // const hMark = 1.69;
 // const massJohn = 92;
 // const hJohn = 1.95;
-const massMark = 95;
-const hMark = 1.88;
-const massJohn = 85;
-const hJohn = 1.76;
+// const massMark = 95;
+// const hMark = 1.88;
+// const massJohn = 85;
+// const hJohn = 1.76;
 
-const BMIMark = massMark / hMark **2
-const BMIJohn = massJohn / hJohn **2
-const markHeigherBMI = BMIMark > BMIJohn;
-console.log(BMIMark, BMIJohn, markHeigherBMI)
+// const BMIMark = massMark / hMark **2
+// const BMIJohn = massJohn / hJohn **2
+// const markHeigherBMI = BMIMark > BMIJohn;
+// console.log(BMIMark, BMIJohn, markHeigherBMI)
 
+const age = 15;
+const isOldEnough = age >= 18;
+
+if (isOldEnough) {
+    console.log("Good to go")
+} else {
+    const yearsLeft = 18 - age;
+    console.log(`You have to wait ${yearsLeft} more years`)
+};
+
+const birthYear = 2012;
+
+let century;
+if(birthYear <= 2000){
+    century = 20;
+} else {
+    century = 21;
+}
+console.log(century);
