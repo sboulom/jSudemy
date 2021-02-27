@@ -260,3 +260,65 @@
 // console.log(Boolean(undefined));
 // console.log(Boolean('steven'));
 // console.log(Boolean({}));
+
+// const money = 0;
+
+// if(money){
+//     console.log("don't spend it all");
+// } else {
+//     console.log("you should get a job");
+// }
+
+// const hasDriverLicense = true;
+// const hasGoodVision = false; 
+
+// console.log(hasDriverLicense && hasGoodVision);
+// console.log(hasDriverLicense || hasGoodVision);
+// console.log(!hasDriverLicense);
+
+// const shouldDrive = hasDriverLicense && hasGoodVision;
+
+// if(shouldDrive){
+//     console.log(`Sara should drive`);
+// }else {
+//     console.log(`someone else should drive`);
+// }
+
+//challenge #3
+// const scoreDolphins = Math.floor((96 + 108 + 89) / 3);
+// const scoreKoala = Math.floor((88 + 91 + 110) / 3);
+// console.log(scoreDolphins, scoreKoala);
+
+// if(scoreDolphins > scoreKoala){
+//     console.log(`Dolphins average more PPG and WIN`);
+// } else if (scoreDolphins < scoreKoala){
+//     console.log(`Koalas average more PPG and WIN`);
+// } else if (scoreDolphins === scoreKoala){
+//     console.log(`Tie`);
+// }
+// bonus 1
+// const scoreDolphins = Math.floor((97 + 112 + 101)/3);
+// const scoreKoala = Math.floor((109 + 95 + 106)/3);
+// console.log(scoreDolphins, scoreKoala);
+
+// if(scoreDolphins > scoreKoala && scoreDolphins >= 100){
+//     console.log(`Dolphins average more PPG and WIN`);
+// } else if (scoreDolphins < scoreKoala && scoreKoala >= 100){
+//     console.log(`Koalas average more PPG and WIN`);
+// } else if (scoreDolphins === scoreKoala && scoreDolphins >= 100 && scoreKoala >= 100){
+//     console.log(`Tie`);
+// } else {
+//     console.log(`BOTH LOSE need to score 100 points`);
+// }
+// const day = 'monday';
+
+// switch (day) {
+//     case 'monday':
+//         console.log(`Plan course structure`);
+//         console.log(`Go to coding meetup`);
+//         break;
+//     case 'tuesday':
+//         console.log(`Theory videos`);
+//         break;
+
+// }
