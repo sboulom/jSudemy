@@ -212,7 +212,28 @@
 // }
 // console.log(percentage3)
 
-// coding challenge #1 
+// const age = 15;
+// const isOldEnough = age >= 18;
+
+// if (isOldEnough) {
+//     console.log("Good to go")
+// } else {
+//     const yearsLeft = 18 - age;
+//     console.log(`You have to wait ${yearsLeft} more years`)
+// };
+
+// const birthYear = 2012;
+
+// let century;
+// if(birthYear <= 2000){
+//     century = 20;
+// } else {
+//     century = 21;
+// }
+// console.log(century);
+
+
+// coding challenge #1 & #2
 
 
 // const massMark = 78;
@@ -224,27 +245,18 @@
 // const massJohn = 85;
 // const hJohn = 1.76;
 
-// const BMIMark = massMark / hMark **2
+// const BMIMark = massMark / hMark **2 
 // const BMIJohn = massJohn / hJohn **2
-// const markHeigherBMI = BMIMark > BMIJohn;
-// console.log(BMIMark, BMIJohn, markHeigherBMI)
+// // const markHeigherBMI = BMIMark > BMIJohn;
 
-const age = 15;
-const isOldEnough = age >= 18;
+// if (BMIMark > BMIJohn) {
+//     console.log(`Mark's BMI (${BMIMark})is higher than John's`)
+// } else {
+//     console.log(`John's BMI (${BMIJohn}) is higher than Mark's`)
+// }
 
-if (isOldEnough) {
-    console.log("Good to go")
-} else {
-    const yearsLeft = 18 - age;
-    console.log(`You have to wait ${yearsLeft} more years`)
-};
-
-const birthYear = 2012;
-
-let century;
-if(birthYear <= 2000){
-    century = 20;
-} else {
-    century = 21;
-}
-console.log(century);
+//turthy and falsy
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean('steven'));
+// console.log(Boolean({}));
