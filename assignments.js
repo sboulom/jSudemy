@@ -329,3 +329,12 @@ const drink = age >= 18 ? 'wine' : 'water';
 console.log(drink);
 
 console.log(`I like to drink ${drink}`)
+
+// coding challenge #4 
+const bill = 430;
+
+const tip = bill <= 300 && bill >=50 ? bill * .15 : bill * .2;
+const total = bill + tip;
+
+
+console.log(`The bill is $${bill}, the tip is $${tip} and the total bill is $${total}`)
