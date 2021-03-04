@@ -1,8 +1,8 @@
-// let js = "amazing";
-// console.log(40 + 8 + 23 - 10);
+// strict mode forbids us to do certain things and js would allow us to fail silently 
+'use strict';
 
-// console.log('Jonas');
+let hasDriversLicense = false;
+const passTest = true;
 
-// let firstName = 'Jonas';
-
-// console.log(firstName); 
+if(passTest) hasDriversLicense = true;
+if(hasDriversLicense) console.log(`I can drive`);
