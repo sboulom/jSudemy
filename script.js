@@ -102,33 +102,61 @@
 // console.log(scoreDolphins, scoreKoalas);
 // checkWinner(scoreDolphins, scoreKoalas);
 
-const friends =['Steven', 'Michael', 'Jonas'];
-console.log(friends)
-const y = new Array(1991, 2001, 2008, 2020);
+// const friends =['Steven', 'Michael', 'Jonas'];
+// console.log(friends)
+// const y = new Array(1991, 2001, 2008, 2020);
 
-console.log(friends[0]);
-console.log(friends[2]);
+// console.log(friends[0]);
+// console.log(friends[2]);
 
-console.log(friends.length);
-console.log(friends[friends.length -1]);
+// console.log(friends.length);
+// console.log(friends[friends.length -1]);
 
-friends[2] = "Jay";
-console.log(friends);
+// friends[2] = "Jay";
+// console.log(friends);
 
-const firstName = 'Steven';
-const steven = [firstName, 'Boulom', 2021-1988, 'Server', friends];
-console.log(steven);
+// const firstName = 'Steven';
+// const steven = [firstName, 'Boulom', 2021-1988, 'Server', friends];
+// console.log(steven);
 
-const calcAge = function(birthYear){
-    return 2037 - birthYear;
+// const calcAge = function(birthYear){
+//     return 2037 - birthYear;
+// }
+
+// const years = [1990, 1967, 2002, 2010, 2018];
+// console.log(years)
+// const age1 = calcAge(years[0]);
+// const age2 = calcAge(years[1]);
+// const age3 = calcAge(years[years.length - 1]);
+// console.log(age1, age2, age3); 
+
+// const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
+// console.log(ages);
+
+// const friends =['Steven', 'Michael', 'Jonas'];
+// const newLength = friends.push('Jay');
+// console.log(friends);
+// console.log(newLength);
+
+// friends.unshift('Jon');
+// console.log(friends);
+
+// friends.pop();
+// console.log(friends);
+// console.log(friends.indexOf('Steven'));
+
+// //returns if element is in the array with strict equality;
+// console.log(friends.includes('Steven'))
+
+// const calcAge = function(birthYear){
+//     return 2037 - birthYear;
+// }
+
+const calcTip = function(bill){
+    return bill <= 300 && bill >= 50 ? bill * .15 : bill * .2 
 }
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+const totals = 
+console.log(bills, tips);
 
-const years = [1990, 1967, 2002, 2010, 2018];
-console.log(years)
-const age1 = calcAge(years[0]);
-const age2 = calcAge(years[1]);
-const age3 = calcAge(years[years.length - 1]);
-console.log(age1, age2, age3); 
-
-const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
-console.log(ages)
