@@ -152,11 +152,27 @@
 //     return 2037 - birthYear;
 // }
 
-const calcTip = function(bill){
-    return bill <= 300 && bill >= 50 ? bill * .15 : bill * .2 
-}
-const bills = [125, 555, 44];
-const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
-const totals = 
-console.log(bills, tips);
+// const calcTip = function(bill){
+//     return bill <= 300 && bill >= 50 ? bill * .15 : bill * .2 
+// }
+// const bills = [125, 555, 44];
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+// const totals = 
+// console.log(bills, tips);
 
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    age: 2037-1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven'],
+
+    calcAge: function (){
+        this.age = 2037 - this.birthYear;
+        return this.age;
+    },
+    getSummary: function() {
+        return
+    }
+}
+console.log(jonas)
