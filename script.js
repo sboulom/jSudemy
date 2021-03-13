@@ -160,21 +160,44 @@
 // const totals = 
 // console.log(bills, tips);
 
-const jonas = {
-    firstName: 'Jonas',
-    lastName: 'Schmedtmann',
-    age: 2037-1991,
-    birthYear: 1991,
-    job: 'teacher',
-    friends: ['Michael', 'Peter', 'Steven'],
-    hasDriversLicense: false,
+// const jonas = {
+//     firstName: 'Jonas',
+//     lastName: 'Schmedtmann',
+//     age: 2037-1991,
+//     birthYear: 1991,
+//     job: 'teacher',
+//     friends: ['Michael', 'Peter', 'Steven'],
+//     hasDriversLicense: false,
 
-    calcAge: function (){
-        this.age = 2037 - this.birthYear;
-        return this.age;
-    },
-    getSummary: function() {
-        return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`
+//     calcAge: function (){
+//         this.age = 2037 - this.birthYear;
+//         return this.age;
+//     },
+//     getSummary: function() {
+//         return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`
+//     }
+// }
+// console.log(jonas.getSummary());
+
+const mark = {
+    fullName: 'Mark Miller',
+    mass: 78,
+    height: 1.69,
+    calcBMI: function(){
+        this.bmi = Math.floor(this.mass / this.height ** 2);
+        return this.bmi;
     }
-}
-console.log(jonas.getSummary());
+};
+
+const john ={
+    fullName: 'John Smith',
+    mass: 92,
+    height: 1.95,
+    calcBMI: function(){
+        this.bmi = Math.floor(this.mass / this.height ** 2);
+        return this.bmi;
+    }
+};
+john.calcBMI();
+mark.calcBMI();
+console.log(mark.bmi, john.bmi)
