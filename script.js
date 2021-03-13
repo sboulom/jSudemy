@@ -200,4 +200,9 @@ const john ={
 };
 john.calcBMI();
 mark.calcBMI();
-console.log(mark.bmi, john.bmi)
+
+if (mark.bmi > john.bmi) {
+    console.log(`${mark.fullName}'s BMI is ${mark.bmi} is higher then ${john.fullName}'s BMI ${john.bmi}`)
+} else {
+    console.log(`its the other way around. `)
+}
