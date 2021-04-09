@@ -54,3 +54,20 @@ console.log(name, openingHours, categories);
 
 // const [p, q, r] =[8, 9]
 // console.log(p, q, r);
+
+const arr = [7, 8, 9];
+const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
+console.log(badNewArr);
+
+const newArray = [1, 2, ...arr];
+console.log(newArray);
+
+const newMenu = [...restaurant.mainMenu, 'Gnocci'];
+console.log(newMenu);
+
+const mainMenuCopy = [...restaurant.mainMenu];
+
+//join 2 array or more
+
+const bothMenu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+console.log(bothMenu);
