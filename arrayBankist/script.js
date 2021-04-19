@@ -71,6 +71,40 @@ const currencies = new Map([
   ['GBP', 'Pound sterling'],
 ]);
 
-const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+// const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 /////////////////////////////////////////////////
+
+// let arr = ['a', 'b', 'c', 'd', 'e']
+// const arr2 = ['j', 'i', 'h', 'g', 'f']
+
+// console.log(arr.slice(2)); 
+//splice method mutates array
+//reverse mutates array
+//concat method doesn't mutate array
+//join method 
+
+
+// const leters = arr.concat(arr2);
+// console.log(leters);
+// console.log(leters.join(' - '));
+
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+
+for( const movement of movements){
+  if(movement > 0){
+    console.log(`you deposited ${movement}`);
+  } else {
+    //math.abs---to remove sign and get absolute value
+    console.log(`you widthdrew ${Math.abs(movement)}`);
+  }
+}
+console.log('*********************');
+movements.forEach(function(movement, index, arrayb){
+  if(movement > 0){
+    console.log(`you deposited ${movement}`);
+  } else {
+    //math.abs---to remove sign and get absolute value
+    console.log(`you widthdrew ${Math.abs(movement)}`);
+  }
+})
