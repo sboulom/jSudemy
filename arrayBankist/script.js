@@ -64,19 +64,23 @@ const inputClosePin = document.querySelector('.form__input--pin');
 
 
 const displayMovements = function(movements){
+  containerMovements.innerHTML = '';
+
   movements.forEach(function(mov, i){
-    const type = mov > 0 ? 'deposit' : 'widthdrawl'
+    const type = mov > 0 ? 'deposit' : 'withdrawal'
 
     const html = `
     <div class="movements__row">
-     <div class="movements__type movements__type--${type}">${i +1} ${type}</div>
+     <div class="movements__type movements__type--${type}"> ${i +1} ${type}</div>
      <div class="movements__value">${mov}</div>
-    </div>`
+    </div>`;
 
-    containerMovements.insertAdjacentHTML('afterbegin')
+    containerMovements.insertAdjacentHTML('afterbegin', html)
   })
 }
 displayMovements(account1.movements)
+
+
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
@@ -105,23 +109,41 @@ const currencies = new Map([
 // console.log(leters);
 // console.log(leters.join(' - '));
 
-const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+// const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
-for( const movement of movements){
-  if(movement > 0){
-    console.log(`you deposited ${movement}`);
-  } else {
-    //math.abs---to remove sign and get absolute value
-    console.log(`you widthdrew ${Math.abs(movement)}`);
-  }
+// for( const movement of movements){
+//   if(movement > 0){
+//     console.log(`you deposited ${movement}`);
+//   } else {
+//     //math.abs---to remove sign and get absolute value
+//     console.log(`you widthdrew ${Math.abs(movement)}`);
+//   }
+// }
+
+// console.log('*********************');
+// movements.forEach(function(movement, index, arrayb){
+//   if(movement > 0){
+//     console.log(`you deposited ${movement}`);
+//   } else {
+//     //math.abs---to remove sign and get absolute value
+//     console.log(`you widthdrew ${Math.abs(movement)}`);
+//   }
+// })
+
+const checkDogs = function(dogsJulia, dogsKate){
+  const dogsJuliaCorrected = dogsJulia.slice();
+  dogsJuliaCorrected.splice(0, 1);
+  dogsJuliaCorrected.splice(-2);
+
+  const dogs = dogsJuliaCorrected.concat(dogsKate);
+  dogs.forEach(function(dog, i){
+    if(dog >3){
+      console.log(`Dog number ${i +1} is an adult, and is ${dog} years old`);
+    } else {
+      console.log(`Dog number ${i +1} is still a puppy`);
+    }
+  })
 }
 
-console.log('*********************');
-movements.forEach(function(movement, index, arrayb){
-  if(movement > 0){
-    console.log(`you deposited ${movement}`);
-  } else {
-    //math.abs---to remove sign and get absolute value
-    console.log(`you widthdrew ${Math.abs(movement)}`);
-  }
-})
+// checkDogs([3, 5, 2, 12, 7], [3, 5, 2, 12, 7]);
+checkDogs([9, 16, 6, 8, 3], [10, 5, 6, 1, 4]);
